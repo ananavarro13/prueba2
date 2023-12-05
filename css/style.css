@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;400;500;600&display=swap');
+
+:root{
+	--menu-hover:#FE8F01;
+	--color-general:#e0e0e0;
+	--color-titulos:#282d33;
+	--color-iconos: #e0e0e0;
+	--color-checks:#53c3c9;
+}
+body{
+	font-size: 14px;
+	font-family: 'Catamaran', sans-serif;
+}
+header{
+	background-color: #FFF;
+	padding: 5px 0;
+	border-bottom:1px solid #eee;
+	margin-bottom:10px;
+}
+footer{
+	background-color: #333333;
+	color: #bababa;
+	padding: 15px 0;
+	text-align: center;
+}
+
+
+
+#welcome {
+    text-align: center;
+    padding: 40px 0; 
+    background-color: #f7f7f7; 
+}
+
+#welcome h2 {
+    font-weight: bold;
+}
+
+#welcome p {
+    color: #888;
+}
+
+
+#welcome img {
+    max-width: 100%;
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+/* Estilos para la sección de características */
+#features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.feature-column {
+    text-align: center;
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.feature-column i {
+   font-size: 80px; /* Tamaño de los iconos ajustado */
+    color: #888; /* Color de los iconos */
+}
+
+.feature-column h4 {
+    font-weight: bold;
+	font-size: 20px
+}
+
+.feature-column p {
+    color: #888;
+}
+
+.checkmark {
+    width: 15px; /* Ancho del checkmark ajustado */
+    height: 15px; /* Alto del checkmark ajustado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto 0;
+}
+
+.checkmark i {
+    color: #53c3c9;
+    font-size: 40px; /* Tamaño del ícono del checkmark ajustado */
+}
+
+/* Estilos para la sección CTA extendida */
+#cta {
+    background-image: url("../img/using-touchscreen.jpg");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.cta-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cta-text {
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+
+.cta-text h1 {
+    font-size: 3em;
+}
+
+.cta-description {
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+
+.cta-description p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.btn span {
+    margin-left: 5px;
+}
+
+/* Efecto fade blanco abajo de la imagen */
+#cta::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+/* Estilos para la sección de clientes */
+#clients {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto; /* Agregamos desplazamiento horizontal en caso de que no quepan todas */
+    padding: 5px 0;
+}
+
+.client-column {
+    flex: 1 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-column img {
+    max-width: 180px; /* Ajusta el ancho máximo para que quepan las cinco imágenes */
+    height: auto;
+    margin: 0 10px; /* Añade un pequeño margen entre las imágenes */
+}
